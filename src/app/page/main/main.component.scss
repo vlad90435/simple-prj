@@ -1,0 +1,16 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 96vw;
+  margin-top: 20px;
+  padding: 0px 30px;
+  &__container{
+    padding-right: 30px;
+  }
+  &__title{
+    display: flex;
+    justify-content: center;
+  }
+}
+

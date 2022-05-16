@@ -1,0 +1,10 @@
+<div class="card-container">
+  <mat-card class="example-card" [ngClass]="{'selected': (selected$ | async) === data.category}">
+    <div class="circle"></div>
+    <mat-card-title>{{ data.category}}</mat-card-title>
+    <mat-card-content>
+      <h3><strong>Info...</strong></h3>
+      <h3><strong>Info...</strong></h3>
+    </mat-card-content>
+  </mat-card>
+</div>

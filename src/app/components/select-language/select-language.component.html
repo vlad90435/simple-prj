@@ -1,0 +1,11 @@
+<mat-form-field appearance="fill">
+	<mat-label>
+		<mat-icon>language</mat-icon>
+		{{ localize.parser.currentLang }}
+	</mat-label>
+	
+	<mat-select (selectionChange)="changeLang(selectedLang)" [(value)]="selectedLang">
+		<mat-option [value]="'ru'">ru</mat-option>
+		<mat-option [value]="'en'">en</mat-option>
+	</mat-select>
+</mat-form-field>

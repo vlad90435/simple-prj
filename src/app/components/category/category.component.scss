@@ -1,0 +1,24 @@
+.example-card{
+  background: ghostwhite;
+  color: black;
+  border: 10px solid lightgrey;
+  white-space: nowrap;
+}
+.selected{
+  background: black;
+  color: white;
+}
+.circle{
+  margin: 0 auto;
+  background: lightblue;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+mat-card-title{
+  margin-top: 15px !important;
+  text-align: center;
+}
+h3{
+
+}

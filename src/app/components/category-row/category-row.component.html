@@ -1,0 +1,11 @@
+<div class="category-row">
+  <div
+    class="category-card"
+    *ngFor="let i of categories$ | async; let j = index"
+    [ngStyle]="{
+      'z-index': j
+    }"
+  >
+    <app-category [data]="i" (click)="filterByCategory(i.category)"></app-category>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="popular"  *ngIf="!(isSearch$ | async)" >
+  <h3>{{ "Main.card.popular" | translate }}</h3>
+	<div class="popular-red-block">{{ popular$ | async }}</div>
+</div>
+<div class="card-row" *ngIf="!(isSearch$ | async); else search">
+  <div class="card-container" *ngFor="let i of games$ | async">
+    <app-card-component [data]="i"></app-card-component>
+  </div>
+</div>
+
+<ng-template #search>
+  <div class="card-row">
+    <div class="card-container" *ngFor="let i of searchGames$ | async">
+      <app-card-component [data]="i"></app-card-component>
+    </div>
+  </div>
+</ng-template>

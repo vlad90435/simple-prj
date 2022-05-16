@@ -1,0 +1,11 @@
+<div class="main" infiniteScroll [infiniteScrollDistance]="1"
+     [infiniteScrollThrottle]="5"
+     (scrolled)="onScroll()">
+  <div class="main__container">
+    <h2 class="main__title">{{ "Main.title" | translate }}</h2>
+    <app-category-row></app-category-row>
+    <app-search-game></app-search-game>
+    <app-card-row></app-card-row>
+    <app-footer></app-footer>
+  </div>
+</div>

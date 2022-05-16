@@ -1,0 +1,11 @@
+{
+    "Main": {
+        "title": "Choose Category",
+        "card": {
+            "popular": "Most Popular"
+        }
+    },
+    "ROUTES.main": "main",
+    "CHANGE_LANGUAGE": "Change language",
+    "GO_HOME": "Go home"
+}
